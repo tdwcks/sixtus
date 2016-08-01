@@ -1,0 +1,178 @@
+// =================================================================
+// 	Sixtus
+// 	Typography
+// =================================================================
+
+// 		Base Font
+// =================================================================
+	$base-font-family: "soleto", sans-serif;
+	$base-font-weight: 400;
+	$base-line-height: 1.4;
+
+// 		Headings
+// =================================================================
+
+body {
+	font-family: $base-font-family;
+	font-size: 18px;
+
+	@include mq("medium", "max-width") {
+		font-size: 18px;
+	}
+
+	@include mq("small", "max-width") {
+		font-size: 18px;
+	}
+
+	@include mq("extra-small", "max-width") {
+		font-size: 16px;
+	}
+
+	@include mq("nano", "max-width") {
+		font-size: 14px;
+	}
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: inherit;
+  text-transform: uppercase;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  color: $colorType;
+  padding: 20px 0;
+  margin: 0;
+}
+
+h1 {
+  	 font-size: 3.157em;
+  	 font-weight: 800;
+
+  	 &.orange {
+  	 	color: $colorOne;
+  	 }
+
+  	 &.white {
+  	 	color: #fff;
+  	 }
+}
+
+h2 {
+	font-size: 2.369em;
+	font-weight: 800;
+	line-height: 1.2em;
+
+	&.orange {
+  	 	color: $colorOne;
+  	}
+
+	&.white {
+		color: #fff;
+	}
+}
+
+h3 {
+	font-size: 1.877em;
+	font-weight: 800;
+	line-height: 1.15em;
+	
+	&.orange {
+  	 	color: $colorOne;
+  	}
+
+	&.white {
+		color: #fff;
+	}
+}
+
+h4 {
+	font-size: 1.333em;
+	font-weight: 800;
+
+	&.orange {
+  	 	color: $colorOne;
+  	}
+
+	&.white {
+		color: #fff;
+	}
+}
+
+h5 {
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0;
+
+	&.orange {
+  	 	color: $colorOne;
+  	}
+
+	&.white {
+		color: #fff;
+	}
+}
+
+h5.underline {
+	border-bottom: 1px solid #ddd;
+}
+
+p.large {
+	font-size: 1.333em;
+	font-weight: 200;
+}
+
+p {
+	color: $colorType;
+	line-height: 1.4em;
+	font-weight: 300;
+	padding: 20px 0;
+}
+
+p.small {
+	font-size: 0.8em;
+}
+
+span {
+	font-weight: 200;
+	font-size: 0.8em;
+	color: $colorType;
+	padding: 20px 0;
+}
+
+ul li {
+	color: $colorType;
+}
+
+p.serif {
+	font-size: 1.1em;
+}
+
+p.large {
+	font-size: 1.5em;
+	font-weight: 200;
+}
+
+@include mq("small", "max-width") {
+	p.large {
+		font-size: 1.3em;
+		padding: 5px 0;
+	}
+}
+
+ol, ul {
+	padding: 0.3em 0 0.3em 0;
+}
+
+li {
+	margin: 0.3em 0 0.3em;
+}
+
+ol li {
+	list-style-type: decimal;
+}
+
+ul li {
+	list-style-type: disc;
+}
+
+small, .font_small {font-size: 0.8em;}

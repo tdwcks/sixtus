@@ -1,0 +1,529 @@
+// =================================================================
+// 	Sixtus
+// 	Page Specific Styling
+// =================================================================
+
+// 	Typography
+// =================================================================
+
+.typography-page {
+	padding: 50px 0;
+	height: auto;
+	overflow: auto;
+}
+
+// 	Grid
+// =================================================================
+
+.grid-page {
+
+	.grid-container {
+		background: lighten($colorFour, 50%);
+	}
+
+	.col-1 {
+		background: $colorOne;
+		height: 50px;
+
+		&:nth-child(odd) {
+			background: $colorFour;
+		}
+	}
+
+	.col-2 {
+		background: $colorOne;
+		height: 50px;
+
+		&:nth-child(odd) {
+			background: $colorFour;
+		}
+	}
+
+	.col-3 {
+		background: $colorOne;
+		height: 50px;
+
+		&:nth-child(odd) {
+			background: $colorFour;
+		}
+	}
+
+	.col-4 {
+		background: $colorOne;
+		height: 50px;
+
+		&:nth-child(odd) {
+			background: $colorFour;
+		}
+	}
+
+	.col-6 {
+		background: $colorOne;
+		height: 50px;
+
+		&:nth-child(odd) {
+			background: $colorFour;
+		}
+	}
+}
+
+// 	About
+// =================================================================
+
+
+.about header {
+	background: $colorTwo;
+}
+
+.about .title {
+	margin-top: 76px;
+	padding: 30px; 
+	background-image: url('images/about_banner.jpg');
+	background-size: auto 100%;
+	height: 280px;
+	background-position: 0 98%;
+	background-repeat: no-repeat;
+
+	h1 {
+		margin-left: 20px;
+		margin-top: 120px;
+	}
+
+	@include mq("small", "max-width") { 
+		background-image: none;
+		height: 93px;
+		padding: 0;
+
+		h1 {
+			padding: 25px 20px;
+			margin: 0;
+		}
+	}
+}
+
+.about .subtitle {
+	background-image: url('images/about_world.png');
+	background-repeat: no-repeat;
+	background-size: 60% 100%;
+	background-position: 100% 0;
+
+	@include mq("small", "max-width") { 
+		background-image: none;
+	}
+}
+
+.about .bsi-logo {
+	width: 60px;
+	height: 60px;
+	margin-top: 20px;
+	margin-left: 48px;
+	background: #f1f1f1;
+
+	@include mq("small", "max-width") {	
+		margin-left: 20px;
+	}	
+}
+
+// 	Service
+// =================================================================
+
+.service header {
+	background: $colorTwo;
+}
+
+.service .title {
+	margin-top: 76px; 
+	background-image: url('images/service_banner.jpg');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: right 0;
+	height: 280px;
+
+	h1 {
+		margin-top: 150px;
+	}
+
+	@include mq("small", "max-width") { 
+		background-image: none;
+		height: 93px;
+		padding: 0;
+
+		h1 {
+			padding: 25px 20px;
+			margin: 0;
+		}
+	}
+}
+
+.service .subtitle {
+	background-color: #fff;
+	padding: 90px 0;
+
+	h3 {
+		color: $colorThree;
+	}
+
+	img {
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 25px;
+		display: block;
+	}
+
+	@include mq("medium", "max-width") {
+		padding: 45px 0;
+	}
+
+	@include mq("small", "max-width") {	
+		padding: 25px 0;
+	}	
+}
+
+.service .writing-image {
+	background: #f1f1f1;
+
+	.col-6:last-child {
+		padding: 80px 0;
+	}
+
+	.col-6:first-child {
+		padding: 0 0;
+	}
+
+	@include mq("medium", "max-width") {
+		.col-6:last-child {
+			padding: 50px 0;
+		}
+	}
+
+	@include mq("small", "max-width") {	
+		.col-6:last-child {
+			padding: 40px 0;
+		}
+	}	
+}
+
+// 	Products
+// =================================================================
+
+.products {
+	header {
+		background: $colorTwo;
+	}
+
+	.title {
+		margin-top: 76px; 
+		background-image: url('images/products_banner.jpg');
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: 0 right;
+		height: 280px;
+
+		h1 {
+			margin-top: 155px;
+		}
+
+		@include mq("small", "max-width") { 
+			background-image: none;
+			height: 93px;
+			padding: 0;
+
+			h1 {
+				padding: 25px 20px;
+				margin: 0;
+			}
+		}
+	}
+
+	.title-band {
+
+		a h5 {
+			margin-right: 30px;
+
+			&:last-child {
+				border-bottom: 0;
+			}
+
+			&.active {
+				border-bottom: 2px solid $colorOne;
+			}
+		}
+
+		a.active h5 {
+			border-bottom: 2px solid $colorOne;
+		}
+
+		ul {
+			padding: 0;
+		}
+
+		ul li {
+			list-style-type: none;
+			text-transform: uppercase; 
+			font-weight: 600;
+			padding: 0;
+			margin: 0;
+			margin-top: 3px;
+			float: left;
+			margin-right: 35px;
+
+			a {
+				padding: 0;
+				color: #fff;
+				list-style-type: none;
+			}
+		}
+
+		@include mq("small", "max-width") {
+			padding: 0;
+
+			a h5 {
+				width: 100%;
+				display: block;
+				padding: 10px 25px;
+				box-sizing: border-box;
+				border-left: 3px solid $colorTwo;
+			}
+
+			a.active h5 {
+				border-bottom: 0px solid $colorOne;
+				border-left: 3px solid $colorOne;
+			}
+
+			a h5:nth-child(even) {
+				background: $colorThree;
+			}
+
+			a h5:before {
+				content: "";
+				display: block;
+				width: 20px;
+				height: 20px;
+				@include transform(rotate(-90deg));
+				background-image: url('images/arrow-down.svg');
+				background-repeat: no-repeat;
+				background-size: 100% 110%;
+				float: right;
+			}
+
+			a h5.active {
+				border-bottom: 0;
+			}
+
+			a h5.active:before {
+				@include transform(rotate(0deg));
+			}
+		}
+	}
+
+	@include mq("small", "max-width") {
+
+		.discovery .col-4 {
+			width: 50%;
+		}
+
+		.discovery .discovery-item {
+			@include aspect-ratio(10, 10);
+
+			img {
+				height: 100%;
+				width: auto;
+			}
+
+			h3 {
+				top: 25px;
+				padding-top: 0;
+				left: 25px;
+			}
+		}
+	}	
+}
+
+@include mq("small", "max-width") {
+
+	.accesories {
+		display: none;
+	}
+
+}
+
+// 	Product
+// =================================================================
+
+.product {
+	header {
+		background: $colorTwo;
+	}
+}
+
+// 	Training Consultancy
+// =================================================================
+
+.training-consultancy {
+
+	header {
+		background: $colorTwo;
+	}
+	
+	.title {
+		margin-top: 76px; 
+		background-image: url('images/service_banner.jpg');
+		background-size: 100% 100%;
+		background-position: 0 0;
+		height: 280px;
+
+		h1 {
+			margin-top: 100px;
+			line-height: 1em;
+		}
+
+		@include mq("small", "max-width") { 
+			background-image: none;
+			height: 100px;
+			padding: 0;
+
+			h1 {
+				padding: 25px 20px;
+				margin: 0;
+			}
+		}
+	}
+
+	.subtitle {
+		background-color: #fff;
+		padding: 0 0;
+		overflow: hidden;
+
+		h3 {
+			color: $colorThree;
+			margin-top: 80px;
+			line-height: 1.2;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	@include mq("medium", "max-width") {
+		.title h1 {
+			margin-top: 100px;
+		} 
+
+		.subtitle h3 {
+			margin-top: 20px;
+		}
+
+		.subtitle .col-6:last-child {
+			padding: 0;
+		}
+	}
+
+	@include mq("small", "max-width") {
+
+		background-image: none;
+
+		.col-6 {
+			width: 100%;
+		}
+
+		.subtitle h3 {
+			margin-top: 0px;
+		}
+
+		.subtitle .col-6:last-child {
+			padding: 0;
+		}
+
+		.title {
+			margin-top: 70px;
+
+			h1 {
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.training-consultancy .writing-image {
+	background: #f1f1f1;
+
+	&:nth-child(even) {
+		background: #fff;
+	}
+
+	.col-6:last-child {
+		padding: 160px 0;
+	}
+
+	.col-6:first-child {
+		padding: 0 0;
+	}
+
+	@include mq("medium", "max-width") {
+		.col-6:last-child {
+			padding: 60px 0;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		margin-top: -5px;
+
+		.col-6 p.large {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.col-6:last-child {
+			padding: 30px 0;
+		}
+	}
+}
+
+
+// 	Contact
+// =================================================================
+
+.contact {
+	header {
+		background: $colorTwo;
+	}
+	
+	.title {
+		margin-top: 76px; 
+		background-image: url('images/contact_banner.jpg');
+		background-size: 100% 100%;
+		background-position: 0 0;
+		height: 280px;
+
+		h1 {
+			margin-top: 150px;
+		}
+
+		@include mq("small", "max-width") { 
+			background-image: none;
+			height: 93px;
+			padding: 0;
+
+			h1 {
+				padding: 25px 20px;
+				margin: 0;
+			}
+		}
+	}
+
+	.subtitle {
+		background-color: #fff;
+		padding: 0 0;
+		overflow: hidden;
+
+		h3 {
+			color: $colorThree;
+			margin-top: 90px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,76 @@
+// =================================================================
+// 	Sixtus
+// 	Forms
+// =================================================================
+
+form {
+	padding: 90px 45px;
+	box-sizing: border-box;
+
+	p {
+		padding: 0;
+		margin-top: 0;
+		padding-bottom: 12px;
+	}
+
+	input, textarea {
+		-webkit-appearance: none;
+  		-webkit-border-radius: 0;
+		width: 100%;
+		font-family: $base-font-family;
+		margin-top: 12px;
+		padding: 12px 20px;
+		box-sizing: border-box;
+		font-size: 18px;
+		font-weight: 400;
+		background: $colorBg;
+		border: 3px solid #fff;
+		outline: none;
+		color: $colorThree;
+
+		&:focus {
+			border: 3px solid $colorThree;
+		}
+	}
+
+	input[type="submit"]  {
+		background: $colorOne;
+		width: initial;
+		font-weight: 600;
+		text-transform: uppercase;
+		color: #fff;
+		cursor: pointer;
+
+		&:hover {
+			background: darken($colorOne, 5%);
+		}
+	}
+}
+
+.wpcf7-response-output {
+	border: none;
+	text-align: left;
+	color: $colorTwo;
+	margin: 0 !important;
+	padding: 20px 0;
+	text-transform: uppercase;
+	line-height: 1.4;
+	font-size: 1.1em;
+}
+
+.wpcf7-mail-sent-ok,  .wpcf7-validation-errors {
+	border: none !important;
+}
+
+div.wpcf7-response-output {
+	margin: 0;
+	padding: 0;
+	padding-top: 10px;
+}
+
+span .wpcf7-not-valid-tip {
+	font-weight: 400;
+	font-size: 1em;
+	padding-bottom: 5px;
+	color: $colorOne;
+}

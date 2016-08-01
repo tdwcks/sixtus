@@ -1,0 +1,33 @@
+// =================================================================
+// 	Sixtus
+// 	Base
+// =================================================================
+
+html {
+	font-size: 1.1em;
+}
+
+body {
+	@include transition(all 0.5s ease-in-out);
+	position: relative;
+	background: $colorBg;
+
+	
+	&.is-exiting {
+		background: #fff;
+	}
+
+	&.menu-active {
+		position: fixed;
+		overflow: hidden;
+	}
+}
+
+body.static {
+	overflow: hidden;
+	padding-right: 17px;
+}
+
+div, section, article {
+	box-sizing: border-box;
+}

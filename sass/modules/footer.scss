@@ -1,0 +1,32 @@
+// =================================================================
+// 	Sixtus
+// 	Footer
+// =================================================================
+
+footer {
+	width: 100%;
+	background: $colorThree;
+	height: 100px;
+
+	p {
+		padding-top: 27px;
+		line-height: 1.5;
+		font-size: 0.8em;
+		padding-left: 40px;
+		color: #fff;
+	}
+
+	@include mq("small", "max-width") {
+		.col-3 {
+			width: 80%;
+		}
+
+		p {
+			padding-left: 25px;
+		}
+	}
+
+	@include mq("medium", "max-width") {
+		width: 100%;
+	}
+}
